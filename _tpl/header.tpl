@@ -46,10 +46,13 @@
         </div><!-- / Top -->
         
         <div id="header" class="clearfix">
+        <div class="grid-3">
+        <article>
         <a href="http://{{ $gimme->publication->site }}">
             <h1>{{ $gimme->publication->name }}</h1>
             <h4>{{ $siteinfo.description }}</h4>
         </a>
+        </div>
             <section class="grid-3-top">
 {{ local }}
 {{ unset_topic }}            
