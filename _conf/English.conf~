@@ -40,9 +40,6 @@ commentSentApproval = "Your comment has been sent for approval."
 publish = "Publish"
 commentsLockedDisabled = "Comments are locked / disabled for this article."
 haveToRegister = "You have to be registered in order to comment on articles and send messages directly to the editorial team. Please login or create a free user account."
-commentPlaceholder = "Put your comment text here"
-nicknamePlaceholder = "Your nickname"
-emailPlaceholder = "Your e-mail"
 
 #_tpl/article-locked.tpl
 thisArticleIsLocked = "This article is locked and is accessible only to <mark>registered</mark> and <mark>logged in</mark> users, sorry!"

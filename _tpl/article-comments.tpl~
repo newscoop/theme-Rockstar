@@ -58,7 +58,7 @@
                <fieldset class="clearfix">
                   <ul>
                     	<li class="left">               
-                        {{ camp_edit object="comment" attribute="content" html_code="placeholder=\"{{ #commentPlaceholder# }}\"" }}
+                        {{ camp_edit object="comment" attribute="content" html_code="placeholder=\"Put your comment text here\"" }}
                      </li>
                      <li class="right">{{ recaptcha }}
             {{ /comment_form }}
@@ -97,7 +97,7 @@
                <fieldset class="clearfix">
                   <ul>
                     	<li class="left">               
-                        {{ camp_edit object="comment" attribute="content" html_code="id=\"comment\" tabindex=\"4\"" html_code="placeholder=\"{{ #commentPlaceholder# }}\"" }}
+                        {{ camp_edit object="comment" attribute="content" html_code="id=\"comment\" tabindex=\"4\"" html_code="placeholder=\"Put your comment text here\"" }}
                      </li>
                      <li class="right">{{ recaptcha }}
             {{ /comment_form }}
@@ -130,12 +130,12 @@
                <fieldset class="clearfix">
                   <ul>
                     	<li class="left">               
-                        {{ camp_edit object="comment" attribute="content" html_code="id=\"comment\" tabindex=\"4\"" html_code="placeholder=\"{{ #commentPlaceholder# }}\"" }}
+                        {{ camp_edit object="comment" attribute="content" html_code="id=\"comment\" tabindex=\"4\"" html_code="placeholder=\"Put your comment text here\"" }}
                      </li>
                     
                      <li class="right">
-                         {{ camp_edit object="comment" attribute="nickname" html_code="placeholder=\"{{ #nicknamePlaceholder# }}\"" }}
-                         {{ camp_edit object="comment" attribute="reader_email" html_code="placeholder=\"{{ #emailPlaceholder# }}\"" }}                     
+                         {{ camp_edit object="comment" attribute="nickname" html_code="placeholder=\"Your nickname\"" }}
+                         {{ camp_edit object="comment" attribute="reader_email" html_code="placeholder=\"Your e-mail\"" }}                     
                          {{ recaptcha }}
             {{ /comment_form }}
                      </li>
