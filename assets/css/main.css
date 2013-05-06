@@ -35,7 +35,7 @@ article .info{display:none;margin:0;list-style-type:none;position:absolute;left:
 article .info li span,article .info li a{font-style:normal;}
 article .info li a{display:block;margin:5px -5px 0;padding:2px 5px;color:#fff;text-decoration:none;background:#e3004f;}
 .form-content{position:relative;padding-bottom:30px;margin-bottom:30px;border-bottom:#dddddd solid 1px;}.form-content dl{overflow:hidden;margin-bottom:10px;}
-.form-content dt{display:none;}
+/*.form-content dt{display:none;}*/
 .form-content #terms_of_use-label,.form-content #terms_of_use-element,.form-content #attributes-gender-label,.form-content #attributes-gender-element,.form-content #image-label,.form-content #attributes-first_name_public-label,.form-content #attributes-last_name_public-label,.form-content #attributes-email_public-label{display:block;float:left;font-family:'Droid Serif',Arial,Helvetica,serif;line-height:25px;font-style:italic;color:#444444;}
 .form-content #terms_of_use-element{margin:5px 0 0 10px;}
 .form-content #attributes-gender-element br{display:none;}
