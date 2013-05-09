@@ -48,7 +48,7 @@
         <div id="header" class="clearfix">
         <div class="grid-3">
         <article>
-        <a href="http://{{ $gimme->publication->site }}">
+        <a href="http://{{ $gimme->publication->site }}" title="{{ #home# }}">
             <h1>{{ $gimme->publication->name }}</h1>
             <h4>{{ $siteinfo.description }}</h4>
         </a>
@@ -70,7 +70,6 @@
         
         <div id="nav-bar" class="clearfix">
           <ul>
-              <li{{ if $gimme->template->name == "front.tpl" }} class="active"{{ /if }}><a href="/">{{ #home# }}</a></li>
     {{ local }}
     {{ set_current_issue }}
     {{ list_sections }}              

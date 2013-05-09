@@ -1,11 +1,9 @@
             <section class="grid-3 textual-block">
-{{ list_articles length="1" ignore_issue="true" ignore_section="true" constraints="issue is 1 section is 5 type is page" }}             
-            	<article>
-                	<h2>{{ #aboutUs# }}</h2>
-                    <h3>{{ #missionStatement# }}</h3>
-                    <p>{{ $gimme->article->full_text|strip_tags:false|truncate:250 }} </p>
-                </article>
-{{ /list_articles }}
+
+{{ include file="_tpl/front-poll.tpl" }}
+
+{{* if you don't want to use polls, comment out previous line and un-comment next one *}}
+{{* include file="_tpl/front-about-us.tpl" *}}                
                 
             	<article>
                 	<h2>{{ #mostRead# }}</h2>
