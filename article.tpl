@@ -11,12 +11,16 @@
             <section class="main entry">
             
 {{ include file="_tpl/article-cont.tpl" }}
+
+{{ if $gimme->article->type_name !== "page" }}
                 
 {{ include file="_tpl/article-author-info.tpl" }}
                 
 {{ include file="_tpl/article-rating.tpl" }}
 
 {{ include file="_tpl/article-comments.tpl" }}
+            
+{{ /if }}            
             
             </section><!-- / Entry -->
             
