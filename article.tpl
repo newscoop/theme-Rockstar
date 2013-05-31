@@ -14,6 +14,8 @@
                 
 {{ include file="_tpl/article-author-info.tpl" }}
                 
+{{ include file="_tpl/article-rating.tpl" }}
+
 {{ include file="_tpl/article-comments.tpl" }}
             
             </section><!-- / Entry -->
