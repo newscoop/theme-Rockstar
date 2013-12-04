@@ -1,4 +1,5 @@
-                <div class="comments">
+
+                <div id="comments" class="comments">
 {{ list_article_comments order="bydate desc"}}     
     {{ if $gimme->current_list->at_beginning }}           
                 <div class="title">

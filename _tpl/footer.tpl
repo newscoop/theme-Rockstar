@@ -15,7 +15,7 @@
                       <p>Rockstar Magazine<br />
                         Rockstreet 69 / 12345 Rocktown<br />
                         .+49 12 345 678 910</p>
-                        <p><a href="#">email@rockstar-magazine.com</a></p>
+                        <p><a href="mailto:email@rockstar-magazine.com">email@rockstar-magazine.com</a></p>
                     </li>
                     <li>
                       <ul>
