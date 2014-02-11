@@ -3,7 +3,7 @@ Rockstar Theme
 
 The clean, modern magazine look. Bold colours, simple navigation and emphasised social and embedded media functions make this theme perfect for lifestyle sites, in-depth magazine portals or organisations who have a focus on the portability and virality of their stories. As ever, images, videos and maps come to the fore, while the new community features in Newscoop 4 exist as standard.
 
-![Rockstar Theme frontpage in different devices] (http://i.imgur.com/TywvEiK.jpg "Rockstar Theme frontpage in different devices")
+![Rockstar Theme frontpage in different devices] (http://i.imgur.com/QqhNkFd.jpg "Rockstar Theme frontpage in different devices")
 
 
 Theme features include:
