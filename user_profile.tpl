@@ -74,22 +74,22 @@
     {{ /foreach }} 
 
     {{ if $profile['email_public'] eq 1}}
-           <em>Email:</em><a href="mailto:{{ $user->email }}">{{ $user->email }}</a><br />
+           <em>Email:&nbsp;</em><a href="mailto:{{ $user->email }}">{{ $user->email }}</a><br />
     {{ /if }}
 
     {{ if  !empty($profile['facebook']) }}
-        <em>Facebook:</em><a rel="nofollow" target="_blank" href="http://facebook.com/{{ $profile['facebook'] }}">{{ $profile['facebook'] }}</a><br />
+        <em>Facebook:&nbsp;</em><a rel="nofollow" target="_blank" href="http://facebook.com/{{ $profile['facebook'] }}">{{ $profile['facebook'] }}</a><br />
     {{ /if }}
     {{ if  !empty($profile['twitter']) }}
-    <em>Twitter:</em><a rel="nofollow" target="_blank" href="http://twitter.com/{{ $profile['twitter'] }}">{{ $profile['twitter'] }}</a><br />
+    <em>Twitter:&nbsp;</em><a rel="nofollow" target="_blank" href="http://twitter.com/{{ $profile['twitter'] }}">{{ $profile['twitter'] }}</a><br />
     {{ /if }}
 
     {{ if  !empty($profile['google']) }}
-     <em>Google+ :</em><a rel="nofollow" target="_blank" href="http://plus.google.com/{{ $profile['google'] }}/">{{ $profile['google'] }}</a><br />
+     <em>Google+ :&nbsp;</em><a rel="nofollow" target="_blank" href="http://plus.google.com/{{ $profile['google'] }}/">{{ $profile['google'] }}</a><br />
     {{ /if }}
 
     {{ if  !empty($profile['website']) }}
-    <em>Website:</em><a rel="nofollow" target="_blank"  href="http://{{ $profile['website']|escape:url }}">
+    <em>Website:&nbsp;</em><a rel="nofollow" target="_blank"  href="http://{{ $profile['website']|escape:url }}">
     {{ $profile['website']|escape:url }}</a>&nbsp;
     {{ /if }}
 
