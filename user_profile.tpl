@@ -70,7 +70,14 @@
       {{ $value|default:"n/a" }}<br />              
     {{ elseif $label == "website" }}
       <em>{{ #website# }}</em>
-      <a rel="nofollow" href="http://{{ $profile['website']|escape:url }}">{{ $profile['website']|escape }}</a><br />      
+      <a rel="nofollow" href="http://{{ $profile['website']|escape:url }}">{{ $profile['website']|escape }}</a><br /> 
+      {{ elseif $label == "facebook" }}
+      <em>Facebook</em>
+      <a rel="nofollow" target="_blank" href="http://facebook.com/{{ $profile['facebook'] }}">{{ $profile['website']|escape }}</a><br />       
+    {{ /if }}
+
+    {{ if $profile['email_public'] eq 1}}
+            <em>Email:</em><br /><a href="mailto:{{ $user->email }}">{{ $user->email }}</a><br /> 
     {{ /if }}
       
     {{ /if }}    
