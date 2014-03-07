@@ -68,20 +68,30 @@
     {{ elseif $label == "organisation" }}
       <em>{{ #organisation# }}</em>
       {{ $value|default:"n/a" }}<br />              
-    {{ elseif $label == "website" }}
-      <em>{{ #website# }}</em>
-      <a rel="nofollow" href="http://{{ $profile['website']|escape:url }}">{{ $profile['website']|escape }}</a><br /> 
-      {{ elseif $label == "facebook" }}
-      <em>Facebook</em>
-      <a rel="nofollow" target="_blank" href="http://facebook.com/{{ $profile['facebook'] }}">{{ $profile['website']|escape }}</a><br />       
-    {{ /if }}
-
-    {{ if $profile['email_public'] eq 1}}
-            <em>Email:</em><br /><a href="mailto:{{ $user->email }}">{{ $user->email }}</a><br /> 
     {{ /if }}
       
     {{ /if }}    
     {{ /foreach }} 
+
+    {{ if $profile['email_public'] eq 1}}
+            <dt>Email:</dt><dd><a href="mailto:{{ $user->email }}">{{ $user->email }}</a></dd>
+    {{ /if }}
+
+    {{ if  !empty($profile['facebook']) }}
+        <a rel="nofollow" target="_blank" href="http://facebook.com/{{ $profile['facebook'] }}"><img src="{{ url static_file='_img/icons/fb.png' }}" alt="Facebook"> </a>&nbsp;
+    {{ /if }}
+    {{ if  !empty($profile['twitter']) }}
+    <a rel="nofollow" target="_blank" href="http://twitter.com/{{ $profile['twitter'] }}"><img src="{{ url static_file='_img/icons/tw.png' }}" alt="Twitter"></a>&nbsp;
+    {{ /if }}
+
+    {{ if  !empty($profile['google']) }}
+    <a rel="nofollow" target="_blank" href="http://plus.google.com/{{ $profile['google'] }}/"><img src="{{ url static_file='_img/icons/gg.png' }}" alt="Google +"></a>&nbsp;
+    {{ /if }}
+
+    {{ if  !empty($profile['website']) }}
+    <a rel="nofollow" target="_blank"  href="http://{{ $profile['website']|escape:url }}">
+    <img src="{{ url static_file='_img/icons/ws.png' }}" alt="WebSite"></a>&nbsp;
+    {{ /if }}
 
     </p>                       
                         </div>
