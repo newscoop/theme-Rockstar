@@ -29,7 +29,7 @@
                           <li><a href="#">{{ #shareGooglePlus# }}</a></li>
                         </ul>
                     </li>
-                    {{*
+                    
                     <li class="language"><a href="#">{{ #language# }}</a>
                       <ul class="sub">
                           <li><a href="#">English</a></li>
@@ -37,7 +37,7 @@
                           <li><a href="#">Nederlands</a></li>
                         </ul>
                     </li>
-                    *}}
+                    
                 </ul>
                  {{ search_form template="search.tpl" html_code="class=\"search-box\"" button_html_code="class=\"button\"" }} 
                 <a href="#" class="search-trigger"></a>
