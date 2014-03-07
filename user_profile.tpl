@@ -42,12 +42,21 @@
                         <figure>
                             <img src="{{ include file="_tpl/user-image.tpl" user=$user width=290 height=190 }}" />
                             <h3>{{ $user->first_name }} {{ $user->last_name }} ({{ $user->uname }})</h3>
-                            <p><em>member from:</em> {{ $user->created }} I <em>{{ #postsNo# }}</em>   {{ list_articles ignore_publication="true" ignore_issue="true" ignore_section="true" constraints="author is $escapedName type is news" order="bypublishdate desc" }}
+                            <p><em>member from:</em> {{ $user->created }} I<br /> <em>{{ #postsNo# }}</em> 
+          <!--List count article-->
+  {{ if $user->isAuthor() }}
+  {{ $escapedName=str_replace(" ", "\ ", $user->author->name) }}
+  {{ /if }}
+
+
+
+  {{ list_articles ignore_publication="true" ignore_issue="true" ignore_section="true" constraints="author is $escapedName type is news" order="bypublishdate desc" }}
 {{ if $gimme->current_list->at_beginning }}
         {{ $gimme->current_list->count }}
 {{ /if }}
 
-{{ /list_articles }}</p>
+{{ /list_articles }}
+ <!--List count article--></p>
                         </figure>
                         <div class="details">
     <p>          
