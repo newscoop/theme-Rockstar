@@ -74,23 +74,23 @@
     {{ /foreach }} 
 
     {{ if $profile['email_public'] eq 1}}
-            <dt>Email:</dt><dd><a href="mailto:{{ $user->email }}">{{ $user->email }}</a></dd>
+           <em>Email:</em><a href="mailto:{{ $user->email }}">{{ $user->email }}</a><br />
     {{ /if }}
 
     {{ if  !empty($profile['facebook']) }}
-        <a rel="nofollow" target="_blank" href="http://facebook.com/{{ $profile['facebook'] }}"><img src="{{ url static_file='_img/icons/fb.png' }}" alt="Facebook"> </a>&nbsp;
+        <em>Facebook:</em><a rel="nofollow" target="_blank" href="http://facebook.com/{{ $profile['facebook'] }}">{{ $profile['facebook'] }}</a><br />
     {{ /if }}
     {{ if  !empty($profile['twitter']) }}
-    <a rel="nofollow" target="_blank" href="http://twitter.com/{{ $profile['twitter'] }}"><img src="{{ url static_file='_img/icons/tw.png' }}" alt="Twitter"></a>&nbsp;
+    <em>Twitter:</em><a rel="nofollow" target="_blank" href="http://twitter.com/{{ $profile['twitter'] }}">{{ $profile['twitter'] }}</a><br />
     {{ /if }}
 
     {{ if  !empty($profile['google']) }}
-    <a rel="nofollow" target="_blank" href="http://plus.google.com/{{ $profile['google'] }}/"><img src="{{ url static_file='_img/icons/gg.png' }}" alt="Google +"></a>&nbsp;
+     <em>Google+ :</em><a rel="nofollow" target="_blank" href="http://plus.google.com/{{ $profile['google'] }}/">{{ $profile['google'] }}</a><br />
     {{ /if }}
 
     {{ if  !empty($profile['website']) }}
-    <a rel="nofollow" target="_blank"  href="http://{{ $profile['website']|escape:url }}">
-    <img src="{{ url static_file='_img/icons/ws.png' }}" alt="WebSite"></a>&nbsp;
+    <em>Website:</em><a rel="nofollow" target="_blank"  href="http://{{ $profile['website']|escape:url }}">
+    {{ $profile['website']|escape:url }}</a>&nbsp;
     {{ /if }}
 
     </p>                       
