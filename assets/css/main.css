@@ -823,7 +823,15 @@ aside .aside-box p a:hover {
   width: 100% !important;
 }
 .geomap_open_large_map a {color:#222222;font-family: 'PT Sans', Arial, Helvetica, sans-serif;
-font-size: 14px;}
+font-size: 14px;text-decoration:none;}
+
+.geomap_open_large_map a:hover {color:#e3004f;}
+
+.attachment a {color:#222222;font-family: 'PT Sans', Arial, Helvetica, sans-serif;
+font-size: 14px;text-decoration:none;}
+
+.attachment a:hover  {color:#e3004f;}
+
 #top {
   position: relative;
   height: 35px;
