@@ -822,6 +822,8 @@ aside .aside-box p a:hover {
 .geo_map_mapcanvas {
   width: 100% !important;
 }
+.geomap_open_large_map a {color:#222222;font-family: 'PT Sans', Arial, Helvetica, sans-serif;
+font-size: 14px;}
 #top {
   position: relative;
   height: 35px;
