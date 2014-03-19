@@ -42,7 +42,21 @@
                         <figure>
                             <img src="{{ include file="_tpl/user-image.tpl" user=$user width=290 height=190 }}" />
                             <h3>{{ $user->first_name }} {{ $user->last_name }} ({{ $user->uname }})</h3>
-                            <p><em>member from:</em> {{ $user->created }} I <em>{{ #postsNo# }}</em> {{ $user->posts_count }}</p>
+                            <p><em>member from:</em> {{ $user->created }} I<br /> <em>{{ #postsNo# }}</em> 
+          <!--List count article-->
+  {{ if $user->isAuthor() }}
+  {{ $escapedName=str_replace(" ", "\ ", $user->author->name) }}
+  {{ /if }}
+
+
+
+  {{ list_articles ignore_publication="true" ignore_issue="true" ignore_section="true" constraints="author is $escapedName type is news" order="bypublishdate desc" }}
+{{ if $gimme->current_list->at_beginning }}
+        {{ $gimme->current_list->count }}
+{{ /if }}
+
+{{ /list_articles }}
+ <!--List count article--></p>
                         </figure>
                         <div class="details">
     <p>          
@@ -68,13 +82,30 @@
     {{ elseif $label == "organisation" }}
       <em>{{ #organisation# }}</em>
       {{ $value|default:"n/a" }}<br />              
-    {{ elseif $label == "website" }}
-      <em>{{ #website# }}</em>
-      <a rel="nofollow" href="http://{{ $profile['website']|escape:url }}">{{ $profile['website']|escape }}</a><br />      
     {{ /if }}
       
     {{ /if }}    
     {{ /foreach }} 
+
+    {{ if $profile['email_public'] eq 1}}
+           <em>Email:&nbsp;</em><a href="mailto:{{ $user->email }}">{{ $user->email }}</a><br />
+    {{ /if }}
+
+    {{ if  !empty($profile['facebook']) }}
+        <em>Facebook:&nbsp;</em><a rel="nofollow" target="_blank" href="http://facebook.com/{{ $profile['facebook'] }}">{{ $profile['facebook'] }}</a><br />
+    {{ /if }}
+    {{ if  !empty($profile['twitter']) }}
+    <em>Twitter:&nbsp;</em><a rel="nofollow" target="_blank" href="http://twitter.com/{{ $profile['twitter'] }}">{{ $profile['twitter'] }}</a><br />
+    {{ /if }}
+
+    {{ if  !empty($profile['google']) }}
+     <em>Google+ :&nbsp;</em><a rel="nofollow" target="_blank" href="http://plus.google.com/{{ $profile['google'] }}/">{{ $profile['google'] }}</a><br />
+    {{ /if }}
+
+    {{ if  !empty($profile['website']) }}
+    <em>Website:&nbsp;</em><a rel="nofollow" target="_blank"  href="http://{{ $profile['website']|escape:url }}">
+    {{ $profile['website']|escape:url }}</a>&nbsp;
+    {{ /if }}
 
     </p>                       
                         </div>

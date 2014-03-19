@@ -15,7 +15,7 @@
                       <p>Rockstar Magazine<br />
                         Rockstreet 69 / 12345 Rocktown<br />
                         .+49 12 345 678 910</p>
-                        <p><a href="#">email@rockstar-magazine.com</a></p>
+                        <p><a href="mailto:email@rockstar-magazine.com">email@rockstar-magazine.com</a></p>
                     </li>
                     <li>
                       <ul>
@@ -29,7 +29,7 @@
                       <p>&copy; {{ $gimme->publication->name }} {{ $smarty.now|camp_date_format:"%Y" }} - {{ #poweredBy# }}</p>
                         <ul>
           {{ list_articles ignore_issue="true" ignore_section="true" constraints="issue is 1 section is 15 type is link"}}
-          <li><a href="{{ $gimme->article->url_address }}" title="{{ $gimme->article->name }}">{{ $gimme->article->name }}</a></li>
+          <li><a target="_blank" href="{{ $gimme->article->url_address }}" title="{{ $gimme->article->name }}">{{ $gimme->article->name }}</a></li>
           {{ /list_articles }}                        
                         </ul>
                     </li>
