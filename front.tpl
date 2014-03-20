@@ -7,6 +7,7 @@
 {{ include file="_tpl/header.tpl" }}
 
 		<div id="content">
+		<h1>test</h1>
 
 {{ include file="_tpl/front-playlist-articles.tpl" }}
 
