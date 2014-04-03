@@ -19,7 +19,7 @@
                       <ul class="sub">
                           <li><a target="_blank" href="https://twitter.com/Sourcefabric">{{ #followAtTwitter# }}</a></li>
                           <li><a target="_blank" href="https://www.facebook.com/Sourcefabric">{{ #likeOnFacebook# }}</a></li>
-                          <li><a href="http://{{ $gimme->publication->site }}/static/rss">{{ #signupRSS# }}</a></li>
+                          <li><a href="http://{{ $gimme->publication->site }}/en/static/rss">{{ #signupRSS# }}</a></li>
                         </ul>
                     </li>
                     <li class="share"><a href="#">{{ #shareThis# }}</a>
