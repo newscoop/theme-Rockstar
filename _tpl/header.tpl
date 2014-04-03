@@ -25,16 +25,17 @@
                     <li class="share"><a href="#">{{ #shareThis# }}</a>
                       <ul class="sub">
                           
-                          <li><script src="http://platform.twitter.com/widgets.js" type="text/javascript"></script>
-  <a target="_blank" href="http://twitter.com/share"  data-text="{{ $gimme->article->name }}" data-via="{{ $gimme->publication->name }}">{{ #tweetOnTwitter# }}</a></li>
+                          <li><a href="http://twitter.com/share?url=http://{{ $gimme->publication->site }}{{ uri }}" target="_blank">{{ #tweetOnTwitter# }}</a></li>
                           <li><a href="https://www.facebook.com/sharer/sharer.php?u=http://{{ $gimme->publication->site }}{{ uri }}" target="_blank">
  {{ #postToFacebook# }}
 </a> </li>
-                          <li><a href="#">{{ #shareGooglePlus# }}</a></li>
+                          <li><a href="https://plus.google.com/share?url=http://{{ $gimme->publication->site }}{{ uri }}" target="_blank">{{ #shareGooglePlus# }}</a></li>
                           
                         </ul>
                     </li>
-                    
+
+
+            
                     <li class="language"><a href="#">{{ #language# }}</a>
                       <ul class="sub">
                           <li><a href="#">English</a></li>
