@@ -9,7 +9,34 @@
   {{ /if }}
 
     <script type="text/javascript">
-                    });
+    $(document).ready(function(){
+    $('a.show-feedback-form').live('click', function(e){
+        e.preventDefault();
+        $.fancybox({
+            'content' : $("#feedback-form").html(),
+            'onComplete' : function(upcoming, current) {
+                $('#fancybox-content .input-file').attr('id', 'plupload-container');
+                $('#fancybox-content .input-file .upload').attr('id', 'plupload-choose-file');
+                var uploader = new plupload.Uploader({
+                    runtimes : 'html5,flash,silverlight',
+                    browse_button : 'plupload-choose-file',
+                    container : 'plupload-container',
+                    max_file_size : '10mb',
+                    url : '{{ $view->baseUrl("/feedback/upload/?format=json") }}',
+                    flash_swf_url : '{{ $view->baseUrl("/js/plupload/js/plupload.flash.swf") }}',
+                    silverlight_xap_url : '{{ $view->baseUrl("/js/plupload/js/plupload.silverlight.xap") }}',
+                    filters : [
+                        {title : "Image files", extensions : "jpg,gif,png,JPG,GIF,PNG"},
+                        {title : "Pdf files", extensions : "pdf"}
+                    ]
+                });
+ 
+                uploader.bind('Init', function(up) {
+                    var is_firefox = navigator.userAgent.toLowerCase().indexOf('firefox') > -1;
+                    if (is_firefox) {
+                        uploader.refresh();
+                    }
+                });
  
                 uploader.init();
  
