@@ -41,7 +41,7 @@
         </div>
 
         <div style="display:none">
-    <div id="feedback-form">
+    <div id="feedback-form" style="width:400px!important;">
       <!-- show only for logged in users -->
       {{ if $gimme->user->logged_in }}
         <div class="popup-form">

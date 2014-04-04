@@ -38,10 +38,10 @@
     <link rel="stylesheet" href="{{ url static_file="assets/css/main.css" }}">
     <link rel="stylesheet" href="{{ url static_file="assets/css/skin.css" }}">
 
-{{ if $gimme->template->name == "article.tpl" }}  
+ 
   <!-- styles for fancybox, used on article page -->
   <link rel="stylesheet" href="{{ url static_file='assets/css/fancybox/jquery.fancybox-1.3.4.css' }}" />    
-{{ /if }}
+
 
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
     <script>window.jQuery || document.write("<script src='{{ url static_file="assets/js/libs/jquery.min.js" }}'>\x3C/script>")</script>
