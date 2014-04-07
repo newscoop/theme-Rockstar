@@ -1,4 +1,4 @@
-      <div id="footer">
+       <div id="footer">
             
             <div id="bottom">
             
@@ -41,15 +41,16 @@
         </div>
 
         <div style="display:none">
-    <div id="feedback-form" style="width:400px!important;">
+    <div id="feedback-form">
       <!-- show only for logged in users -->
       {{ if $gimme->user->logged_in }}
         <div class="popup-form">
         <form method="POST" id="feedback-form-form" action="/feedback/save">
-            <h2><span>Feedback</span></h2>
+            <h2>Feedback</h2>
             <fieldset>
                 <ul>
                     <li>
+                    <label>Choose a topic</label>
                         <select class="topic" style="min-width: 200px;">
                             <option value="First topic">First topic</option>
                             <option value="Second topic">Second topic</option>
@@ -61,14 +62,12 @@
                     </li>
                     <li>
                         <label>Message<i>*</i></label>
-                        <textarea cols="" rows="" id="feedback-content" name="content"></textarea>
+                        <textarea cols="" rows="4" id="feedback-content" name="content"></textarea>
                     </li>
                     <li class="input-file red">
+                    <label style="display:transparent">Choose file</label>
                         <div class="show-value"></div>
                         <input type="file" class="upload" />
-                    </li>
-                    <li>
-                        <small><i>*</i>Required</small></p>
                     </li>
                     <li class="top-line">
                         <div class="file-holder"></div>

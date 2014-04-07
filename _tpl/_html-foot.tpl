@@ -13,7 +13,7 @@
     $('a.show-feedback-form').live('click', function(e){
         e.preventDefault();
         $.fancybox({
-            width: 520,
+            width: 420,
             'autoDimensions'    : false,
             'content' : $("#feedback-form").html(),
             'onComplete' : function(upcoming, current) {
