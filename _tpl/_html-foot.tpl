@@ -1,4 +1,5 @@
     <script src="{{ uri static_file="assets/js/libs/jquery.jcarousel.min.js" }}"></script>
+    <script src="{{ uri static_file="assets/js/libs/plupload/js/plupload.full.js" }}"></script>
     
     <!--[if (gte IE 6)&(lte IE 8)]>
       <script type="text/javascript" src="{{ uri static_file="assets/js/libs/selectivizr-min.js" }}"></script>
