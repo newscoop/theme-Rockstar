@@ -51,7 +51,7 @@
                 <ul>
                     <li>
                     <label>Choose a topic</label>
-                        <select class="topic" style="min-width: 278px;">
+                        <select class="topic" style="min-width: 276px;">
                             <option value="First topic">First topic</option>
                             <option value="Second topic">Second topic</option>
                         </select>
