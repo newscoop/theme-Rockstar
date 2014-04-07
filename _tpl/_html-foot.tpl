@@ -14,7 +14,7 @@
     $('a.show-feedback-form').live('click', function(e){
         e.preventDefault();
         $.fancybox({
-            width: 420,
+            width: 440,
             'autoDimensions'    : false,
             'content' : $("#feedback-form").html(),
             'onComplete' : function(upcoming, current) {
