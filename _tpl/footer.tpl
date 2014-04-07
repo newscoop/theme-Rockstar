@@ -40,7 +40,7 @@
         
         </div>
 
-        <div style="display:none;" {{ if $gimme->user->logged_in }} test {{ else }} test 2 {{ /if }}>
+        <div style="display:none;">
     <div id="feedback-form">
       <!-- show only for logged in users -->
       {{ if $gimme->user->logged_in }}
@@ -51,7 +51,7 @@
                 <ul>
                     <li>
                     <label>Choose a topic</label>
-                        <select class="topic" style="min-width: 200px;">
+                        <select class="topic" style="min-width: 278px;">
                             <option value="First topic">First topic</option>
                             <option value="Second topic">Second topic</option>
                         </select>

@@ -107,6 +107,16 @@
   border: 1px solid #444;
   padding: 2px 10px;
 }
+#fancybox-content div .popup-form input[type="text"]  {
+  border: 1px solid #444;
+  width: 268px;
+  padding: 3px;
+}
+#fancybox-content div .popup-form textarea {
+  border: 1px solid #444;
+  width: 268px;
+  padding: 3px;
+}
 #fancybox-content div .popup-form label {
   float: left;
   min-width: 100px;
