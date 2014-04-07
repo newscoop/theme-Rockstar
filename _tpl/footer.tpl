@@ -40,7 +40,7 @@
         
         </div>
 
-        <div style="display:none">
+        <div style="display:none;" {{ if $gimme->user->logged_in }} test {{ else }} test 2 {{ /if }}>
     <div id="feedback-form">
       <!-- show only for logged in users -->
       {{ if $gimme->user->logged_in }}
@@ -78,7 +78,7 @@
         </form>
         </div>
     {{ else }}
-    <h2>Only for logged in users</h2>
+    <h2 style="text-align: center;">Only for logged in users</h2>
     <p style="text-align: center; font-size: 15px; font-weight: bold; padding-top: 10px;">Login <a href="{{ $view->url(['controller' => 'auth', 'action' =>'index'], 'default') }}">here</a></p>
     {{ /if }}
     </div>
