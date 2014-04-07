@@ -112,6 +112,9 @@
   width: 268px;
   padding: 3px;
 }
+#fancybox-content div .popup-form input[type="submit"]  {
+  float:right;
+}
 #fancybox-content div .popup-form textarea {
   border: 1px solid #444;
   width: 268px;
