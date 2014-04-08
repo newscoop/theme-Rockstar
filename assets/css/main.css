@@ -1,5 +1,4 @@
 @import "reset.css";
-
 @import "http://fonts.googleapis.com/css?family=PT+Sans:700,400,400italic|PT+Sans+Narrow:700|Droid+Serif:400,400italic,700,700italic";
 .text-indent {
   text-indent: -9999px;
@@ -822,16 +821,6 @@ aside .aside-box p a:hover {
 .geo_map_mapcanvas {
   width: 100% !important;
 }
-.geomap_open_large_map a {color:#222222;font-family: 'PT Sans', Arial, Helvetica, sans-serif;
-font-size: 14px;text-decoration:none;}
-
-.geomap_open_large_map a:hover {color:#e3004f;}
-
-.attachment a {color:#222222;font-family: 'PT Sans', Arial, Helvetica, sans-serif;
-font-size: 14px;text-decoration:none;}
-
-.attachment a:hover  {color:#e3004f;}
-
 #top {
   position: relative;
   height: 35px;
@@ -1390,6 +1379,13 @@ font-size: 14px;text-decoration:none;}
   .grid-3 article:nth-child(3n) {
     margin-right: 30px;
   }
+  #bottom ul li {
+    width: 23%;
+    margin-right: 2%;
+  }
+  #bottom ul li li {
+    width: 100%;
+  }
 }
 @media (max-width: 768px) {
   .user-slider li article figure {
@@ -1510,13 +1506,6 @@ font-size: 14px;text-decoration:none;}
   }
   .comments fieldset ul li textarea {
     margin-bottom: 15px;
-  }
-  #bottom ul li {
-    width: 23%;
-    margin-right: 2%;
-  }
-  #bottom ul li li {
-    width: 100%;
   }
   .form-content .form-buttons {
     float: left;
