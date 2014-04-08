@@ -17,19 +17,25 @@
 
                     <li class="follow"><a href="#">{{ #followUs# }}</a>
                       <ul class="sub">
-                          <li><a href="#">{{ #followAtTwitter# }}</a></li>
-                          <li><a href="#">{{ #likeOnFacebook# }}</a></li>
-                          <li><a href="http://{{ $gimme->publication->site }}/static/rss">{{ #signupRSS# }}</a></li>
+                          <li><a target="_blank" href="https://twitter.com/Sourcefabric">{{ #followAtTwitter# }}</a></li>
+                          <li><a target="_blank" href="https://www.facebook.com/Sourcefabric">{{ #likeOnFacebook# }}</a></li>
+                          <li><a href="http://{{ $gimme->publication->site }}/en/static/rss">{{ #signupRSS# }}</a></li>
                         </ul>
                     </li>
                     <li class="share"><a href="#">{{ #shareThis# }}</a>
                       <ul class="sub">
-                          <li><a href="#">{{ #tweetOnTwitter# }}</a></li>
-                          <li><a href="#">{{ #postToFacebook# }}</a></li>
-                          <li><a href="#">{{ #shareGooglePlus# }}</a></li>
+                          
+                          <li><a href="http://twitter.com/share?url=http://{{ $gimme->publication->site }}{{ uri }}" target="_blank">{{ #tweetOnTwitter# }}</a></li>
+                          <li><a href="https://www.facebook.com/sharer/sharer.php?u=http://{{ $gimme->publication->site }}{{ uri }}" target="_blank">
+ {{ #postToFacebook# }}
+</a> </li>
+                          <li><a href="https://plus.google.com/share?url=http://{{ $gimme->publication->site }}{{ uri }}" target="_blank">{{ #shareGooglePlus# }}</a></li>
+                          
                         </ul>
                     </li>
-                    
+
+
+            
                     <li class="language"><a href="#">{{ #language# }}</a>
                       <ul class="sub">
                           <li><a href="#">English</a></li>

@@ -12,7 +12,7 @@
 		<frontPage src="front.tpl"/>
 		<sectionPage src="section.tpl"/>
 		<articlePage src="article.tpl"/>
-		<errorPage src="section.tpl"/>
+		<errorPage src="404.tpl"/>
 	</output>
 	
 	<renditions>
