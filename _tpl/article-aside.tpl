@@ -29,8 +29,8 @@
 {{assign var=hasvideo value=0}}
 {{ list_article_attachments }}
 {{ if $gimme->attachment->extension == oga || $gimme->attachment->extension == mp3 || $gimme->attachment->extension == MP3  }}          
-<div class="audio-attachment">
-  <h3> {{ #listen# }}</h3>
+<div class="audio-attachment aside-box">
+  <h2>{{ #listenAudio# }}</h2>
     <audio src="{{ uri options="articleattachment" }}" controls></audio><br>
     <a class="btn btn-mini btn-red" href="{{ uri options="articleattachment" }}">{{ #downloadAudioFile# }} | {{ $gimme->attachment->extension }}</a>
 </div><!-- /#audio-attachment -->
@@ -49,18 +49,23 @@
 {{ /if }}  
 
 {{ if $hasvideo == true }}
-<div class="video-attachment"><!-- read http://diveintohtml5.org/video.html -->
-  <h3> {{ #watch# }}</h3>
-    <div class="flowplayer" data-engine="flash" data-swf="{{ url static_file='_js/vendor/flowplayer/flowplayer.swf' }}" data-ratio="0.417">
+<div class="attachment aside-box">
+          <h2>{{ #downloadFile# }}</h2>
+          <p>{{ #fileOfType# }} {{ $gimme->attachment->mime_type }}</p>
+          <a href="{{ uri options="articleattachment" }}">{{ $gimme->attachment->file_name }} ({{ $gimme->attachment->size_kb }}kb)</a>
+          <p><em>{{ $gimme->attachment->description }}</em></p>
+      </div><!-- /.attachment -->
+
+
+<div class="video-attachment aside-box"><!-- read http://diveintohtml5.org/video.html -->
+   <h2>{{ #watchVideo# }}</h2>
+    <div class="flowplayer" data-engine="flash" data-swf="{{ url static_file='assets/js/vendor/flowplayer/flowplayer.swf' }}" data-ratio="0.417">
       <video >
         {{foreach from=$videosources key=extension item=videoSource name=videoLoop}}
         <source src="{{ $videoSource }}" type='video/{{if $extension == flv }}flash{{ elseif $extension == ogv}}ogg{{ else }}{{ $extension }}{{ /if }}'>
         {{/foreach}}
       </video>
     </div>
-    {{foreach from=$videosources key=extension item=videoSource name=videoLoop}}
-    <a href="{{ $videoSource }}" class="btn btn-mini btn-red">{{ #download# }} | {{ $extension }}</a>
-    {{/foreach}}
 </div><!-- /#video-attachment --> 
 {{ /if }}
 
