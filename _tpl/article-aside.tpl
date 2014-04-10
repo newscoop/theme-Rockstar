@@ -33,7 +33,7 @@
   <h2>{{ #listenAudio# }}</h2>
     <audio src="{{ uri options="articleattachment" }}" controls></audio><br>
     
-</div><
+</div>
 {{ elseif $gimme->attachment->extension == ogv || $gimme->attachment->extension == ogg || $gimme->attachment->extension == flv || $gimme->attachment->extension == mp4 || $gimme->attachment->extension == webm }}             
     {{append var=videosources value="{{ uri options="articleattachment" }}" index="`$gimme->attachment->extension`"}}
     {{assign var = hasvideo value = true}}
