@@ -48,17 +48,18 @@
 {{ /if }} 
 <!-- /#audio --> 
 <!-- /#download --> 
-{{ if $gimme->article->has_attachments }} 
+{{ if $gimme->article->has_attachments }}
+<div class="attachment aside-box">
+          <h2>{{ #downloadFile# }}</h2> 
 {{ list_article_attachments }}  
-{{ if $gimme->attachment->extension == flv  }} 
-      <div class="attachment aside-box">
-          <h2>{{ #downloadFile# }}</h2>
+
+      
           <p>{{ #fileOfType# }} {{ $gimme->attachment->mime_type }}</p>
           <a href="{{ uri options="articleattachment" }}">{{ $gimme->attachment->file_name }} ({{ $gimme->attachment->size_kb }}kb)</a>
           <p><em>{{ $gimme->attachment->description }}</em></p>
-      </div><!-- /.attachment --> 
-{{ /if }}     
-{{ /list_article_attachments }}      
+     
+{{ /list_article_attachments }}  
+ </div><!-- /.attachment -->     
 {{ /if }} 
 <!-- /#download --> 
 <!-- /#video-attachment -->     
