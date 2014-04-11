@@ -40,7 +40,7 @@
             	<article>
                 	<ul class="info">
                     	<li>{{ #memberFrom# }} <span> {{ $user->created }}</span></li>
-                        <li>{{ #postsNo# }} {{ $user->posts_count }}</li>
+                        <li>{{ #articles# }} {{ $user->posts_count }}</li>
                         <li><a href="{{ $view->url(['username' => $user->uname], 'user') }}">{{ #viewFullProfile# }}</a></li>
                     </ul>
                     <img src="{{ include file="_tpl/user-image.tpl" user=$user width=130 height=130 }}" />

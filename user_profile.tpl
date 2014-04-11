@@ -42,7 +42,7 @@
                         <figure>
                             <img src="{{ include file="_tpl/user-image.tpl" user=$user width=290 height=190 }}" />
                             <h3>{{ $user->first_name }} {{ $user->last_name }} ({{ $user->uname }})</h3>
-                            <p><em>member from:</em> {{ $user->created }} I<br /> <em>{{ #postsNo# }}</em> 
+                            <p><em>member from:</em> {{ $user->created }} I<br /> <em>{{ #articles# }}</em> 
           <!--List count article-->
   {{ if $user->isAuthor() }}
   {{ $escapedName=str_replace(" ", "\ ", $user->author->name) }}
