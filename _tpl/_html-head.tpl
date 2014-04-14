@@ -50,5 +50,10 @@
     
   <!-- Video.js -->
   <link href="http://vjs.zencdn.net/c/video-js.css" rel="stylesheet">
-  <script src="http://vjs.zencdn.net/c/video.js"></script>    
+  <script src="http://vjs.zencdn.net/c/video.js"></script>  
+
+  {{ if $gimme->template->name == "article.tpl" }}  
+    <link href="{{ url static_file='assets/css/flowplayer_skin/minimalist.css' }}" rel="stylesheet">
+    <script src="{{ url static_file='assets/js/vendor/flowplayer/flowplayer.min.js' }}"></script>
+{{ /if }}  
 </head>

@@ -808,6 +808,13 @@ aside .aside-box p a {
 aside .aside-box p a:hover {
   text-decoration: underline;
 }
+aside .aside-box a {
+  color: #e3004f;
+  text-decoration: none;
+}
+aside .aside-box a:hover {
+  text-decoration: underline;
+}
 .list-large {
   margin: 0;
   list-style-type: none;
