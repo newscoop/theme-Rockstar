@@ -81,6 +81,14 @@ h4 a {
 h4 a:hover {
   text-decoration: underline;
 }
+.subtitle p {
+  font-size: 28px;
+  margin-bottom: 15px;
+  color: #e3004f;
+  font-family: 'PT Sans Narrow', Arial, Helvetica, sans-serif;
+  line-height: 35px;
+  text-transform: uppercase;
+}
 .paging {
   margin-left: 5px;
   font-family: 'PT Sans', Arial, Helvetica, sans-serif;
