@@ -13,7 +13,7 @@
             </div>
             
             <section class="grid-6">
-{{ list_sections }}  
+{{ list_sections columns="6" }}  
 {{ list_articles }}
 {{ if $gimme->current_list->at_beginning }}          
             	<article>
@@ -29,7 +29,8 @@
 {{ if $gimme->current_list->at_end }}                    
                 </article>
 {{ /if }}                
-{{ /list_articles }}                
+{{ /list_articles }}   
+ {{ if $gimme->current_list->column == 6 }} <br clear="all" />             
 {{ /list_sections }}                
             
             </section><!-- / 6 articles grid -->
