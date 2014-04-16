@@ -14,7 +14,7 @@
             
             <section class="grid-6">
 {{ list_sections columns="6" }}  
-{{ list_articles }}
+{{ list_articles constraints="type not poll" }}
 {{ if $gimme->current_list->at_beginning }}          
             	<article>
                 	<h3>{{ $gimme->section->name }}</h3>
