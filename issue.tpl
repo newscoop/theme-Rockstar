@@ -30,7 +30,7 @@
                 </article>
 {{ /if }}                
 {{ /list_articles }}   
- {{ if $gimme->current_list->column == 6 }} <br clear="all" />             
+ {{ if $gimme->current_list->column == 6 }} <br clear="all" />{{ /if }}             
 {{ /list_sections }}                
             
             </section><!-- / 6 articles grid -->
