@@ -330,13 +330,13 @@ ul.debatte-score {
 }
 .button.debbut {
   color: #fff;
-  background: #31827d;
+  background: #e3004f;
   text-align: center;
   padding: 5px;
 }
 .button.debbut:hover,
 .button.debbut.active {
-  background: #222222;
+  background: #e3004f;
 }
 .inner-highlight {
   width: 330px;
@@ -355,6 +355,11 @@ ul.debatte-score {
   float: left;
   margin-right: 15px;
   max-width: 97px;
+  margin-bottom: 0px!important;
+}
+.inner-highlight figure img {
+  margin-bottom: 10px;
+  height: auto;
 }
 .inner-highlight.left {
   margin-right: 15px;
