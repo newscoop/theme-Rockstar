@@ -196,6 +196,30 @@ article blockquote {
   margin: 0;
   padding-left: 10px;
 }
+.inner-highlight {
+  width: 330px;
+  padding: 15px;
+  background: #e5e5e5;
+}
+.inner-highlight h3 {
+  margin-bottom: 0;
+  color: #B40032;
+}
+.inner-highlight p {
+  font-size: 14px;
+  line-height: 21px;
+}
+.inner-highlight figure {
+  float: left;
+  margin-right: 15px;
+  max-width: 97px;
+}
+.inner-highlight .left {
+  margin-right: 15px;
+}
+.inner-highlight .right {
+  margin-left: 15px;
+}
 body {
   font-family: 'Droid Serif', Arial, Helvetica, serif;
   background: url("../img/top-background.png") 0 0 repeat-x #ffffff;
