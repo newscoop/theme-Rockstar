@@ -196,6 +196,148 @@ article blockquote {
   margin: 0;
   padding-left: 10px;
 }
+/* Debatte */
+ul.debatte-score {
+  overflow: hidden;
+  margin: 0!important;
+  list-style-type: none;
+  padding: 0;
+}
+ul.debatte-score li {
+  float: left;
+  position: relative;
+  width: 50%;
+  height: 35px;
+}
+ul.debatte-score li.yes {
+  background: #e3004f;
+}
+ul.debatte-score li.no {
+  background: #222222;
+}
+ul.debatte-score li.no:before {
+  content: "";
+  position: absolute;
+  left: -1px;
+  top: 0;
+  width: 1px;
+  height: 100%;
+  ackground: #fff;
+}
+ul.debatte-score li span {
+  position: absolute;
+  left: 5px;
+  top: 0;
+  font-size: 12px;
+  color: #fff;
+  line-height: 35px;
+  white-space: nowrap;
+}
+ul.debatte-score li.no span {
+  left: auto;
+  right: 5px;
+}
+/* Debatte single */
+.headline {
+  padding: 14px 10px;
+  font-size: 14px;
+}
+.debatte-single header {
+  padding: 10px 0;
+}
+.debatte-single header h3,
+.debatte-single header h6 {
+  text-align: center;
+  font-size: 24px;
+}
+.debatte-single header h6 a {
+  color: #B40032;
+  text-decoration: none;
+}
+.debatte-single header h3 a {
+  color: #000;
+  text-decoration: none;
+}
+.debatte-single.debatte-detail header {
+  padding: 30px 0 20px 0;
+}
+.debatte-single ul.debatte-score li {
+  height: 57px;
+}
+.debatte-single ul.debatte-score li span {
+  line-height: 57px;
+  font-size: 14px;
+}
+.debatte-single .score-box {
+  position: relative;
+  padding-top: 0;
+}
+.debatte-single .score-box small {
+  text-align: center;
+  color: #666666;
+  font-size: 13px;
+}
+.debatte-list article {
+  margin-bottom: 25px;
+}
+.debatte-list article h3 {
+  color: #B40032;
+}
+.debatte-single.debatte-detail header {
+  padding: 10px 0;
+}
+.debatte-single .score-box small {
+  padding-top: 5px;
+}
+ul.debatte-score {
+  width: auto;
+  margin: 0 10px;
+}
+.vote-box {
+  padding: 10px 10px 0;
+}
+.debatte-list.left-thumb article figure,
+.debatte-list.left-thumb article figure img {
+  width: auto;
+}
+.debatte-list.left-thumb article p {
+  display: block;
+}
+.vote-box {
+  padding: 4% 4% 0 4%;
+}
+.button-group {
+  overflow: hidden;
+  margin-bottom: 7px;
+}
+.button-group a {
+  width: 47%;
+  float: left;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  border-left: 2px solid #fff;
+  border-right: 2px solid #fff;
+}
+.button-group a:last-child {
+  float: right;
+}
+.vote-box p {
+  font-size: 14px;
+  line-height: 18px;
+  text-align: left;
+  margin: 0;
+}
+.button.debbut {
+  color: #fff;
+  background: #31827d;
+  text-align: center;
+  padding: 5px;
+}
+.button.debbut:hover,
+.button.debbut.active {
+  background: #222222;
+}
 .inner-highlight {
   width: 330px;
   padding: 15px;
