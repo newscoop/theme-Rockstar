@@ -198,7 +198,8 @@ article blockquote {
 }
 #recaptcha_response_field {
   border: 1px solid #fff!important;
-  height: 32px!important;
+  max-height: 32px!important;
+  height: auto;
 }
 /* Debatte */
 ul.debatte-score {
