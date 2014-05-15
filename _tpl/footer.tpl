@@ -23,7 +23,8 @@
           {{ list_articles ignore_issue="true" ignore_section="true" constraints="issue is 1 section is 5"}}
           <li><a href="{{ uri options="article" }}" title="{{ $gimme->article->name }}">{{ $gimme->article->name }}</a></li>
           {{ /list_articles }}
-          <li><a href="#" class="show-feedback-form">Show Feedback</a></li>
+          <li><a href="{{ uri options="template archive.tpl" }}">{{ #archives# }}</a></li>
+          <li><a href="#" class="show-feedback-form">Feedback</a></li>
                         </ul>
                     </li>
                     <li>
