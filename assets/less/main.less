@@ -355,14 +355,6 @@ article {
     }
     input[type=submit] {width: 160px;}
 }
-#email-label, #password-label, #first_name-element, #last_name-label, #username-element
-#attributes-bio-label, #attributes-birth_date-label{
-    display: inline-block !important;
-    float: left;
-    margin-right: 10px;
-    margin-top: 5px;
-    min-width: 80px;
-}
 .zend_form{
    width:50%;
 }
@@ -372,6 +364,10 @@ article {
     margin-right: 10px;
     margin-top: 5px;
     min-width: 80px;
+    font-style: normal;
+}
+.zend_form #image-label + dd{
+    clear: none;
 }
 // Article grids
 .grid-1 {
