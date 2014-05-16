@@ -718,6 +718,19 @@ article .info li a {
 .zend_form #image-label + dd {
   clear: none;
 }
+.zend_form dd#attributes-gender-element br {
+  display: none;
+}
+.zend_form dd#attributes-gender-element::after {
+  content: "<br />";
+  color: transparent;
+}
+.zend_form #attributes-bio-label {
+  clear: left;
+}
+.zend_form #attributes-bio-element {
+  clear: inherit;
+}
 .grid-1 article {
   float: none;
   overflow: hidden;
