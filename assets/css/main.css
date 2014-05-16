@@ -568,6 +568,9 @@ article .info li a {
   text-decoration: none;
   background: #e3004f;
 }
+.recaptcha_input_area {
+  height: 33px!important;
+}
 .form-content {
   position: relative;
   padding-bottom: 30px;
@@ -707,13 +710,29 @@ article .info li a {
 .zend_form {
   width: 50%;
 }
+.email-label {
+  display: inline-block !important;
+  float: left;
+  margin-right: 10px;
+  margin-top: 5px;
+  min-width: 80px;
+  font-style: normal!important;
+}
+.password-label {
+  display: inline-block !important;
+  float: left;
+  margin-right: 10px;
+  margin-top: 5px;
+  min-width: 80px;
+  font-style: normal!important;
+}
 .zend_form dt {
   display: inline-block !important;
   float: left;
   margin-right: 10px;
   margin-top: 5px;
   min-width: 80px;
-  font-style: normal;
+  font-style: normal!important;
 }
 .zend_form #image-label + dd {
   clear: none;
