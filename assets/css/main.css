@@ -196,20 +196,6 @@ article blockquote {
   margin: 0;
   padding-left: 10px;
 }
-#email-label {
-  display: inline-block !important;
-  float: left;
-  margin-right: 10px;
-  margin-top: 5px;
-  min-width: 80px;
-}
-#password-label {
-  display: inline-block !important;
-  float: left;
-  margin-right: 10px;
-  margin-top: 5px;
-  min-width: 80px;
-}
 #recaptcha_response_field {
   border: 1px solid #fff!important;
   max-height: 32px!important;
@@ -582,6 +568,9 @@ article .info li a {
   text-decoration: none;
   background: #e3004f;
 }
+.recaptcha_input_area {
+  height: 33px!important;
+}
 .form-content {
   position: relative;
   padding-bottom: 30px;
@@ -717,6 +706,49 @@ article .info li a {
 }
 .horizontal-form input[type=submit] {
   width: 160px;
+}
+.zend_form {
+  width: 50%;
+}
+#email-label {
+  display: inline-block !important;
+  float: left;
+  margin-right: 10px;
+  margin-top: 5px;
+  min-width: 80px;
+  font-style: normal!important;
+}
+#password-label {
+  display: inline-block !important;
+  float: left;
+  margin-right: 10px;
+  margin-top: 5px;
+  min-width: 80px;
+  font-style: normal!important;
+}
+.zend_form dt {
+  display: inline-block !important;
+  float: left;
+  margin-right: 10px;
+  margin-top: 5px;
+  min-width: 80px;
+  font-style: normal!important;
+}
+.zend_form #image-label + dd {
+  clear: none;
+}
+.zend_form dd#attributes-gender-element br {
+  display: none;
+}
+.zend_form dd#attributes-gender-element::after {
+  content: "<br />";
+  color: transparent;
+}
+.zend_form #attributes-bio-label {
+  clear: left;
+}
+.zend_form #attributes-bio-element {
+  clear: inherit;
 }
 .grid-1 article {
   float: none;
