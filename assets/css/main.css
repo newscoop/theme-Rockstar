@@ -705,21 +705,12 @@ article .info li a {
 .horizontal-form input[type=submit] {
   width: 160px;
 }
-form .zend_form dl {
-  display: inline-block !important;
-  float: left;
-  margin-right: 10px;
-  margin-top: 5px;
-  min-width: 80px;
-}
-#email-label {
-  display: inline-block !important;
-  float: left;
-  margin-right: 10px;
-  margin-top: 5px;
-  min-width: 80px;
-}
-#password-label {
+#email-label,
+#password-label,
+#first_name-element,
+#last_name-label,
+#username-element #attributes-bio-label,
+#attributes-birth_date-label {
   display: inline-block !important;
   float: left;
   margin-right: 10px;
