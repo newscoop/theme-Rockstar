@@ -570,7 +570,6 @@ article .info li a {
 }
 .form-content {
   position: relative;
-  width: 50%;
   padding-bottom: 30px;
   margin-bottom: 30px;
   border-bottom: #dddddd solid 1px;
@@ -711,6 +710,16 @@ article .info li a {
 #last_name-label,
 #username-element #attributes-bio-label,
 #attributes-birth_date-label {
+  display: inline-block !important;
+  float: left;
+  margin-right: 10px;
+  margin-top: 5px;
+  min-width: 80px;
+}
+.zend_form {
+  width: 50%;
+}
+.zend_form dt {
   display: inline-block !important;
   float: left;
   margin-right: 10px;
