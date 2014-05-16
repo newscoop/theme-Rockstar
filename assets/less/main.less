@@ -108,20 +108,6 @@ h4 { font-size: 13px;
     margin: 0;
     padding-left: 10px;
 }
-#email-label{
-    display: inline-block !important;
-    float: left;
-    margin-right: 10px;
-    margin-top: 5px;
-    min-width: 80px;
-}
-#password-label{
-    display: inline-block !important;
-    float: left;
-    margin-right: 10px;
-    margin-top: 5px;
-    min-width: 80px;
-}
 #recaptcha_response_field{
     border: 1px solid #fff!important;
     max-height: 32px!important;
@@ -300,6 +286,7 @@ article {
 // Form styles
 .form-content {
     position: relative;
+    width:50%;
     padding-bottom: 30px; margin-bottom: 30px;
     border-bottom: @border-color solid 1px;
     dl {overflow: hidden; margin-bottom: 10px;}
@@ -369,8 +356,27 @@ article {
     }
     input[type=submit] {width: 160px;}
 }
-
-
+form .zend_form dl{
+     display: inline-block !important;
+    float: left;
+    margin-right: 10px;
+    margin-top: 5px;
+    min-width: 80px;
+}
+#email-label{
+    display: inline-block !important;
+    float: left;
+    margin-right: 10px;
+    margin-top: 5px;
+    min-width: 80px;
+}
+#password-label{
+    display: inline-block !important;
+    float: left;
+    margin-right: 10px;
+    margin-top: 5px;
+    min-width: 80px;
+}
 // Article grids
 .grid-1 {
     article {
