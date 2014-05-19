@@ -25,6 +25,22 @@
             <p><em>{{ #thisArticleIsLocked# }}</em></p>
 {{ /if }}                     
                 </article>
+                <div id="social-bookmarks-bar" class="social-bar{{ if $gimme->publication->identifier == "2" || $gimme->publication->identifier == "4" }} bottom-line{{ /if }} clearfix">
+                  
+                  <ul id="social_bookmarks" class="soc-options left"></ul>
+
+{{ capture name="subject" }}Lesenswerter Artikel auf Zentral+{{ /capture }}
+{{ capture name="body" }}
+    Ich empfehle Ihnen folgenden Artikel auf Zentral+
+    {{ url options="article" }}
+{{ /capture }}
+
+                    <ul class="article-options right phone-hide">
+                            <li class="email"><a href="mailto:?subject={{ $smarty.capture.subject|rawurlencode }}&body={{ $smarty.capture.body|rawurlencode }}" id="article-recommend-button">Email</a></li>
+                            <li class="print mobile-hide"><a href="#" onclick="window.print();return false">Print</a></li>
+                    </ul>
+                
+                </div>
                 <div class="paging-holder">
  <span class="paging">
                    {{ if $gimme->article->subtitles_count(full_text) gt 1 }}
