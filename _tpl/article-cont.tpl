@@ -25,7 +25,7 @@
             <p><em>{{ #thisArticleIsLocked# }}</em></p>
 {{ /if }}                     
                 </article>
-                <div id="social-bookmarks-bar" class="social-bar{{ if $gimme->publication->identifier == "2" || $gimme->publication->identifier == "4" }} bottom-line{{ /if }} clearfix">
+                <div id="social-bookmarks-bar" class="social-bar">
                   
                   <ul id="social_bookmarks" class="soc-options left"></ul>
 
@@ -33,7 +33,47 @@
 {{ capture name="body" }}
     Ich empfehle Ihnen folgenden Artikel auf Zentral+
     {{ url options="article" }}
-{{ /capture }}
+{{ /capture <script type="text/javascript">
+    jQuery(document).ready(function($){
+      if($('#social_bookmarks').length > 0){
+        $('#social_bookmarks').socialSharePrivacy({
+            services: {
+                  facebook: {
+                    'app_id': '118901678281903',
+                    'dummy_img': '{{ uri static_file="assets/img/icon-soc-bar-fb.png" }}'
+                  }, 
+                    twitter: {
+                        'dummy_img': '{{ uri static_file="assets/img/icon-soc-bar-tw.png" }}',
+                        'related': {{ json_encode(implode(',', $related)) }}
+                    },
+                    gplus: {
+                        'display_name': 'Google Plus',
+                        'dummy_img': '{{ uri static_file="assets/img/icon-soc-bar-gplus.png" }}'
+                    }
+            },
+                'cookie_path': '/',
+                'cookie_domain': document.location.host,
+                'cookie_expires': 365,
+                'css_path' : '{{ uri static_file="assets/js/libs/socialshareprivacy/socialshareprivacy.css" }}',
+                'settings_perma': 'Button dauerhaft aktivieren',
+                'info_button': ' Die Sharing-Buttons können Benutzungsdaten an Facebook, Twitter oder Google übermitteln. Wir haben sie deshalb standardmässig deaktiviert. Bitte aktivieren Sie sie, um sie zu nutzen.'        
+        }); 
+      }    
+        {{ dynamic }}
+        {{ if $gimme->user->is_admin }}
+        $('a.editlink').each(function() {
+            this.href = 'http://{{ $gimme->publication->site }}/admin/articles/edit.php?' + this.href.replace(/^.*#/, '');
+        }).toggle();
+        $('a.dashboard-editlink').each(function() {
+            this.href = 'http://{{ $gimme->publication->site }}/admin/';
+        }).toggle();
+        {{ /if }}
+        {{ /dynamic }}
+
+    });
+  </script> 
+
+
 
                     <ul class="article-options right phone-hide">
                             <li class="email"><a href="mailto:?subject={{ $smarty.capture.subject|rawurlencode }}&body={{ $smarty.capture.body|rawurlencode }}" id="article-recommend-button">Email</a></li>
@@ -41,6 +81,49 @@
                     </ul>
                 
                 </div>
+
+                <script type="text/javascript">
+    jQuery(document).ready(function($){
+      if($('#social_bookmarks').length > 0){
+        $('#social_bookmarks').socialSharePrivacy({
+            services: {
+                  facebook: {
+                    'app_id': '118901678281903',
+                    'dummy_img': '{{ uri static_file="assets/img/icon-soc-bar-fb.png" }}'
+                  }, 
+                    twitter: {
+                        'dummy_img': '{{ uri static_file="assets/img/icon-soc-bar-tw.png" }}',
+                        'related': {{ json_encode(implode(',', $related)) }}
+                    },
+                    gplus: {
+                        'display_name': 'Google Plus',
+                        'dummy_img': '{{ uri static_file="assets/img/icon-soc-bar-gplus.png" }}'
+                    }
+            },
+                'cookie_path': '/',
+                'cookie_domain': document.location.host,
+                'cookie_expires': 365,
+                'css_path' : '{{ uri static_file="assets/js/libs/socialshareprivacy/socialshareprivacy.css" }}',
+                'settings_perma': 'Button dauerhaft aktivieren',
+                'info_button': ' Die Sharing-Buttons können Benutzungsdaten an Facebook, Twitter oder Google übermitteln. Wir haben sie deshalb standardmässig deaktiviert. Bitte aktivieren Sie sie, um sie zu nutzen.'        
+        }); 
+      }    
+        {{ dynamic }}
+        {{ if $gimme->user->is_admin }}
+        $('a.editlink').each(function() {
+            this.href = 'http://{{ $gimme->publication->site }}/admin/articles/edit.php?' + this.href.replace(/^.*#/, '');
+        }).toggle();
+        $('a.dashboard-editlink').each(function() {
+            this.href = 'http://{{ $gimme->publication->site }}/admin/';
+        }).toggle();
+        {{ /if }}
+        {{ /dynamic }}
+
+    });
+  </script> 
+
+
+
                 <div class="paging-holder">
  <span class="paging">
                    {{ if $gimme->article->subtitles_count(full_text) gt 1 }}
