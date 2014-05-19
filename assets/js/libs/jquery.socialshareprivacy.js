@@ -47,7 +47,7 @@
         if (title.length > 0 && creator.length > 0) {
             title += ' - ' + creator;
         } else {
-            title = $('title').text().replace('| Rockstar', '(@Sourcefabric)');
+            title = $('title').text().replace('| Zentralplus', '(@zentralplus)');
         }
 
         return encodeURIComponent(title);
@@ -92,7 +92,7 @@
                     'perma_option'      : 'on',
                     'display_name'      : 'Facebook',
                     'referrer_track'    : '',
-                    'language'          : 'en_EN',
+                    'language'          : 'de_DE',
                     'action'            : 'recommend'
                 }, 
                 'twitter' : {
@@ -117,7 +117,7 @@
                     'perma_option'      : 'on',
                     'display_name'      : 'Google+',
                     'referrer_track'    : '',
-                    'language'          : 'en'
+                    'language'          : 'de'
                 }
             },
             'info_link'         : 'http://www.heise.de/ct/artikel/2-Klicks-fuer-mehr-Datenschutz-1333879.html',
