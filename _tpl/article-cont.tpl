@@ -68,8 +68,8 @@
                 'cookie_domain': document.location.host,
                 'cookie_expires': 365,
                 'css_path' : '{{ uri static_file="assets/js/libs/socialshareprivacy/socialshareprivacy.css" }}',
-                'settings_perma': 'Button dauerhaft aktivieren',
-                'info_button': ' Die Sharing-Buttons können Benutzungsdaten an Facebook, Twitter oder Google übermitteln. Wir haben sie deshalb standardmässig deaktiviert. Bitte aktivieren Sie sie, um sie zu nutzen.'        
+                'settings_perma': 'Activate button permanently',
+                'info_button': ' The sharing buttons can transmit usage data to Facebook, Twitter or Google. We have therefore disabled it by default. Please turn it on to use them.'        
         }); 
       }    
         {{ dynamic }}

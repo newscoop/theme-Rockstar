@@ -92,7 +92,7 @@
                     'perma_option'      : 'on',
                     'display_name'      : 'Facebook',
                     'referrer_track'    : '',
-                    'language'          : 'de_DE',
+                    'language'          : 'en',
                     'action'            : 'recommend'
                 }, 
                 'twitter' : {
@@ -117,7 +117,7 @@
                     'perma_option'      : 'on',
                     'display_name'      : 'Google+',
                     'referrer_track'    : '',
-                    'language'          : 'de'
+                    'language'          : 'en'
                 }
             },
             'info_link'         : 'http://www.heise.de/ct/artikel/2-Klicks-fuer-mehr-Datenschutz-1333879.html',
@@ -291,7 +291,7 @@
                 $container_settings_info.find('.settings_info_menu').removeClass('perma_option_off');
 
                 // Perma-Optionen-Icon (.settings) und Formular (noch versteckt) einbinden
-                $container_settings_info.find('.settings_info_menu').append('<span class="settings">Aktivieren</span><form><fieldset><legend>' + options.settings_perma + '</legend></fieldset></form>');
+                $container_settings_info.find('.settings_info_menu').append('<span class="settings">Activate</span><form><fieldset><legend>' + options.settings_perma + '</legend></fieldset></form>');
 
 
                 // Die Dienste mit <input> und <label>, sowie checked-Status laut Cookie, schreiben
