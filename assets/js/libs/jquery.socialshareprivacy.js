@@ -47,7 +47,7 @@
         if (title.length > 0 && creator.length > 0) {
             title += ' - ' + creator;
         } else {
-            title = $('title').text().replace('| Zentralplus', '(@zentralplus)');
+            title = $('title').text().replace('| Rockstar', '(@Sourcefabric)');
         }
 
         return encodeURIComponent(title);
@@ -92,7 +92,7 @@
                     'perma_option'      : 'on',
                     'display_name'      : 'Facebook',
                     'referrer_track'    : '',
-                    'language'          : 'en',
+                    'language'          : 'en_EN',
                     'action'            : 'recommend'
                 }, 
                 'twitter' : {
