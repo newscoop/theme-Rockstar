@@ -111,13 +111,13 @@
                 'gplus' : {
                     'status'            : 'on',
                     'dummy_img'         : 'socialshareprivacy/images/dummy_gplus.png',
-                    'txt_info'          : '2 Klicks f&uuml;r mehr Datenschutz: Erst wenn Sie hier klicken, wird der Button aktiv und Sie k&ouml;nnen Ihre Empfehlung an Google+ senden. Schon beim Aktivieren werden Daten an Dritte &uuml;bertragen &ndash; siehe <em>i</em>.',
-                    'txt_gplus_off'     : 'nicht mit Google+ verbunden',
-                    'txt_gplus_on'      : 'mit Google+ verbunden',
+                    'txt_info'          : '2 clicks for more data protection: Only when you click here, will the button be active and you can send your recommendation to Google+. When activating data is transmitted to third parties - see <em> i </ em>.',
+                    'txt_gplus_off'     : 'not connected to Google+',
+                    'txt_gplus_on'      : 'connected to Google+',
                     'perma_option'      : 'on',
                     'display_name'      : 'Google+',
                     'referrer_track'    : '',
-                    'language'          : 'de'
+                    'language'          : 'en'
                 }
             },
             'info_link'         : 'http://www.heise.de/ct/artikel/2-Klicks-fuer-mehr-Datenschutz-1333879.html',
