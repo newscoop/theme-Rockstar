@@ -47,7 +47,7 @@
         if (title.length > 0 && creator.length > 0) {
             title += ' - ' + creator;
         } else {
-            title = $('title').text().replace('| Zentralplus', '(@zentralplus)');
+            title = $('title').text().replace('| Sourcefabric', '(@sourcefabric)');
         }
 
         return encodeURIComponent(title);
@@ -86,21 +86,21 @@
                 'facebook' : {
                     'status'            : 'on',
                     'dummy_img'         : 'socialshareprivacy/images/dummy_facebook.png',
-                    'txt_info'          : '2 Klicks f&uuml;r mehr Datenschutz: Erst wenn Sie hier klicken, wird der Button aktiv und Sie k&ouml;nnen Ihre Empfehlung an Facebook senden. Schon beim Aktivieren werden Daten an Dritte &uuml;bertragen &ndash; siehe <em>i</em>.',
-                    'txt_fb_off'        : 'nicht mit Facebook verbunden',
-                    'txt_fb_on'         : 'mit Facebook verbunden',
+                    'txt_info'          : '2 clicks for more data protection: Only when you click here, will the button be active and you can send your recommendation to Google+. When activating data is transmitted to third parties - see <em> i </ em>.',
+                    'txt_fb_off'        : 'not connected to Facebook',
+                    'txt_fb_on'         : 'connected to Facebook',
                     'perma_option'      : 'on',
                     'display_name'      : 'Facebook',
                     'referrer_track'    : '',
-                    'language'          : 'de_DE',
+                    'language'          : 'en_EN',
                     'action'            : 'recommend'
                 }, 
                 'twitter' : {
                     'status'            : 'on', 
                     'dummy_img'         : 'socialshareprivacy/images/dummy_twitter.png',
-                    'txt_info'          : '2 Klicks f&uuml;r mehr Datenschutz: Erst wenn Sie hier klicken, wird der Button aktiv und Sie k&ouml;nnen Ihre Empfehlung an Twitter senden. Schon beim Aktivieren werden Daten an Dritte &uuml;bertragen &ndash; siehe <em>i</em>.',
-                    'txt_twitter_off'   : 'nicht mit Twitter verbunden',
-                    'txt_twitter_on'    : 'mit Twitter verbunden',
+                    'txt_info'          : '2 clicks for more data protection: Only when you click here, will the button be active and you can send your recommendation to Google+. When activating data is transmitted to third parties - see <em> i </ em>.',
+                    'txt_twitter_off'   : 'not connected to Twitter',
+                    'txt_twitter_on'    : 'connected to Twitter',
                     'perma_option'      : 'on',
                     'display_name'      : 'Twitter',
                     'referrer_track'    : '', 
@@ -121,8 +121,8 @@
                 }
             },
             'info_link'         : 'http://www.heise.de/ct/artikel/2-Klicks-fuer-mehr-Datenschutz-1333879.html',
-            'txt_help'          : 'Wenn Sie diese Felder durch einen Klick aktivieren, werden Informationen an Facebook, Twitter oder Google in die USA &uuml;bertragen und unter Umst&auml;nden auch dort gespeichert. N&auml;heres erfahren Sie durch einen Klick auf das <em>i</em>.',
-            'settings_perma'    : 'Dauerhaft aktivieren und Daten&uuml;ber&shy;tragung zustimmen:',
+            'txt_help'          : 'When you activate these fields by clicking, information is transmitted to Facebook, Twitter or Google in the U.S. and probably also stored there. For details, see by clicking on the <em> i </ em>.',
+            'settings_perma'    : 'Permanently Activate and agree to data transmission:',
             'info_button'       : 'Change the text',
             'cookie_path'       : '/',
             'cookie_domain'     : document.location.host,
