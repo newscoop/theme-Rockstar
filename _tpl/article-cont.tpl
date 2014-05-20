@@ -29,64 +29,11 @@
                  <div id="social-bookmarks-bar" class="social-bar clearfix">
                   
                   <ul id="social_bookmarks" class="soc-options left"></ul>
-
-{{ capture name="subject" }}Lesenswerter Artikel auf Zentral+{{ /capture }}
-{{ capture name="body" }}
-    Ich empfehle Ihnen folgenden Artikel auf Zentral+
-    {{ url options="article" }}
-{{ /capture }}
-
-                    <ul class="article-options right phone-hide">
-                            <li class="email"><a href="mailto:?subject={{ $smarty.capture.subject|rawurlencode }}&body={{ $smarty.capture.body|rawurlencode }}" id="article-recommend-button">Email</a></li>
-                            <li class="print mobile-hide"><a href="#" onclick="window.print();return false">Print</a></li>
-                    </ul>
                 
                 </div>
 
 
-                <script type="text/javascript" src="{{ uri static_file="assets/js/libs/jquery.socialshareprivacy.js" }}"></script>
-
-    <script type="text/javascript">
-    jQuery(document).ready(function($){
-      if($('#social_bookmarks').length > 0){
-        $('#social_bookmarks').socialSharePrivacy({
-            services: {
-                  facebook: {
-                    'app_id': '118901678281903',
-                    'dummy_img': '{{ uri static_file="assets/img/icon-soc-bar-fb.png" }}'
-                  }, 
-                    twitter: {
-                        'dummy_img': '{{ uri static_file="assets/img/icon-soc-bar-tw.png" }}',
-                        'related': {{ json_encode(implode(',', $related)) }}
-                    },
-                    gplus: {
-                        'display_name': 'Google Plus',
-                        'dummy_img': '{{ uri static_file="assets/img/icon-soc-bar-gplus.png" }}'
-                    }
-            },
-                'cookie_path': '/',
-                'cookie_domain': document.location.host,
-                'cookie_expires': 365,
-                'css_path' : '{{ uri static_file="assets/js/libs/socialshareprivacy/socialshareprivacy.css" }}',
-                'settings_perma': 'Activate button permanently',
-                'info_button': ' The sharing buttons can transmit usage data to Facebook, Twitter or Google. We have therefore disabled it by default. Please turn it on to use them.'        
-        }); 
-      }    
-        {{ dynamic }}
-        {{ if $gimme->user->is_admin }}
-        $('a.editlink').each(function() {
-            this.href = 'http://{{ $gimme->publication->site }}/admin/articles/edit.php?' + this.href.replace(/^.*#/, '');
-        }).toggle();
-        $('a.dashboard-editlink').each(function() {
-            this.href = 'http://{{ $gimme->publication->site }}/admin/';
-        }).toggle();
-        {{ /if }}
-        {{ /dynamic }}
-
-    });
-  </script> 
-
-
+                
   <!--SOCIAL-->
 
 
