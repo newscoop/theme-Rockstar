@@ -205,23 +205,11 @@ article blockquote {
   list-style-type: none;
   margin: 0;
 }
-social-bar ul li {
-  float: left;
-  margin-right: 20px;
-}
-.social-bar ul li a {
-  display: block;
-  width: 31px;
-  height: 31px;
-  text-indent: -9999px;
-  background-position: 50% 50%;
-  background-repeat: no-repeat;
-}
-.social-bar ul li.email a {
-  background-image: url(../img/icon-email-big.png);
-}
-.social-bar ul li.print a {
-  background-image: url(../img/icon-print-big.png);
+social-bookmarks-bar {
+  position: relative;
+  padding: 0 0 25px 0;
+  margin-bottom: 30px;
+  border-bottom: #dddddd 1px solid;
 }
 /* Debatte */
 ul.debatte-score {
