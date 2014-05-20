@@ -92,7 +92,7 @@
                     'perma_option'      : 'on',
                     'display_name'      : 'Facebook',
                     'referrer_track'    : '',
-                    'language'          : 'en_EN',
+                    'language'          : 'en_US',
                     'action'            : 'recommend'
                 }, 
                 'twitter' : {
