@@ -1,3 +1,4 @@
+{{ if empty($siteinfo) }}{{ $siteinfo=['description' => '', 'keywords' => ''] }}{{ /if }}    
         <div id="top" class="clearfix">
             <h3>{{ #welcomeRockstar# }}</h3>
             <div class="top-menu">
