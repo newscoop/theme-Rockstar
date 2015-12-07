@@ -1,6 +1,5 @@
 <div class="title">
-  <h2>{{ #searchResults# }}</h2>
-  <p class="search-info">{{ #search# }}: {{ $gimme->search_articles_action->search_phrase }}</p>
+  <h2>{{ #searchResults# }}: {{ $gimme->search_articles_action->search_phrase }}</h2>
 </div>  
 
 {{ list_search_results length="9" columns="3" }}

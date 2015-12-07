@@ -25,10 +25,23 @@
             <p><em>{{ #thisArticleIsLocked# }}</em></p>
 {{ /if }}                     
                 </article>
-                <div class="paging-holder">
- <span class="paging">
+ <!--SOCIAL-->
+                 <div id="social-bookmarks-bar" class="social-bar clearfix">
+                  
+                  <ul id="social_bookmarks" class="soc-options left"></ul>
+                
+                </div>
+
+
+                
+  <!--SOCIAL-->
+
+
+
+                
                    {{ if $gimme->article->subtitles_count(full_text) gt 1 }}
-   
+   <div class="paging-holder">
+ <span class="paging">
         
             {{ list_subtitles field_name="full_text" }}
 {{ if $gimme->current_list->at_beginning }}
@@ -48,7 +61,7 @@
 
             {{ /list_subtitles }}
 <a href="{{ uri options="all_subtitles full_text" }}" class="readAll">Read article on one page</a> 
-{{ /if }}
-    
 </span>
                 </div> 
+{{ /if }}
+    
